@@ -1,0 +1,452 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  height: 82px;
+  width: 100%;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(18px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo-section{
+  display:flex;
+  align-items:center;
+}
+
+.logo-text{
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:30px;
+  font-weight:800;
+  color:#FC8019;
+}
+
+.logo-text span{
+  color:#222;
+  letter-spacing:.5px;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:38px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#333;
+  font-size:16px;
+  font-weight:600;
+  transition:.3s;
+  position:relative;
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:0;
+  height:3px;
+  border-radius:10px;
+  background:#FC8019;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:#FC8019;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.header-search{
+  width:360px;
+}
+
+.search-form{
+  width:100%;
+}
+
+.search-box{
+  height:50px;
+  background:#fff;
+  border-radius:50px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+.search-box input{
+  flex:1;
+  border:none;
+  outline:none;
+  padding:0 20px;
+  font-size:15px;
+  background:transparent;
+}
+
+.search-box input::placeholder{
+  color:#888;
+}
+
+.search-box button{
+  width:56px;
+  height:50px;
+  border:none;
+  background:#FC8019;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+  font-size:18px;
+}
+
+.search-box button:hover{
+  background:#ff6a00;
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+/* ===========================
+   LOCATION
+=========================== */
+
+.location-pill{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#fff3ea;
+  color:#FC8019;
+  padding:10px 18px;
+  border-radius:50px;
+  font-size:14px;
+  font-weight:600;
+}
+/* ===========================
+   CART BUTTON
+=========================== */
+
+.cart-btn{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#222;
+  background:#fff;
+  padding:12px 20px;
+  border-radius:50px;
+  font-weight:600;
+  box-shadow:0 8px 22px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.cart-btn svg{
+  color:#FC8019;
+  font-size:18px;
+}
+
+.cart-btn:hover{
+  transform:translateY(-3px);
+  color:#FC8019;
+}
+
+.cart-count{
+  position:absolute;
+  top:-6px;
+  right:-6px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:#FC8019;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:12px;
+  font-weight:700;
+}
+
+/* ===========================
+   LOGIN BUTTON
+=========================== */
+
+.login-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  background:#FC8019;
+  color:#fff;
+  padding:12px 26px;
+  border-radius:50px;
+  font-weight:600;
+  transition:.3s;
+  box-shadow:0 10px 25px rgba(252,128,25,.25);
+}
+
+.login-btn svg{
+  font-size:18px;
+}
+
+.login-btn:hover{
+  background:#ff6b00;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+/* ===========================
+   PROFILE
+=========================== */
+
+.profile-dropdown{
+  position:relative;
+}
+
+.profile-btn{
+  border:none;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 16px;
+  border-radius:50px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.profile-btn:hover{
+  transform:translateY(-2px);
+}
+
+.avatar-nav{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #FC8019;
+}
+
+.profile-btn span{
+  font-weight:600;
+  color:#333;
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.dropdown-menu-custom{
+  position:absolute;
+  top:70px;
+  right:0;
+  width:220px;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
+  overflow:hidden;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(15px);
+  transition:.3s;
+  z-index:999;
+}
+
+.profile-dropdown:hover .dropdown-menu-custom{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+.dropdown-menu-custom a,
+.dropdown-menu-custom button{
+  width:100%;
+  display:block;
+  padding:16px 20px;
+  text-decoration:none;
+  border:none;
+  background:#fff;
+  color:#333;
+  text-align:left;
+  font-size:15px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.dropdown-menu-custom a:hover,
+.dropdown-menu-custom button:hover{
+  background:#fff5ef;
+  color:#FC8019;
+}
+
+/* ===========================
+   MOBILE MENU BUTTON
+=========================== */
+
+.menu-btn{
+  display:none;
+  border:none;
+  background:none;
+  font-size:28px;
+  cursor:pointer;
+  color:#FC8019;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+  .navbar{
+    padding:0 30px;
+  }
+
+  .header-search{
+    width:280px;
+  }
+
+  .nav-links{
+    gap:22px;
+  }
+
+}
+
+@media(max-width:992px){
+
+  .menu-btn{
+    display:block;
+  }
+
+  .header-search{
+    display:none;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:82px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    gap:0;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .nav-links a{
+    width:100%;
+    padding:18px;
+    border-bottom:1px solid #eee;
+  }
+
+  .location-pill{
+    display:none;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    padding:0 20px;
+  }
+
+  .cart-btn span{
+    display:none;
+  }
+
+  .profile-btn span{
+    display:none;
+  }
+.logo-section{
+    width:260px;
+    flex-shrink:0;
+}
+
+.logo-text{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.site-logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.logo-content h2{
+    margin:0;
+    color:#FC8019;
+    font-size:30px;
+    font-weight:800;
+}
+
+.logo-content p{
+    margin:0;
+    color:#777;
+    font-size:12px;
+    letter-spacing:2px;
+}
+.logo-icon{
+    font-size:34px;
+    color:#FC8019;
+}
+}

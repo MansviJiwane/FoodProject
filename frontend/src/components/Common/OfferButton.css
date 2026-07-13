@@ -1,0 +1,21 @@
+.offer-btn{
+    background:linear-gradient(135deg,#ff8a00,#ff5a00);
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s ease;
+    box-shadow:0 10px 25px rgba(255,122,0,.35);
+}
+
+.offer-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(255,122,0,.45);
+}
+
+.offer-btn:active{
+    transform:scale(.96);
+}

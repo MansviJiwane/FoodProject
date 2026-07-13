@@ -1,0 +1,570 @@
+/* =====================================
+   OFFERS PAGE
+===================================== */
+
+.offers-page{
+    width:100%;
+    min-height:100vh;
+    background:#fff8f2;
+    padding:110px 8% 60px;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.offers-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.offers-header h1{
+    font-size:52px;
+    font-weight:800;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.offers-header p{
+    color:#666;
+    font-size:18px;
+}
+
+/* =====================================
+   OFFER CARD
+===================================== */
+
+.offer-card{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:40px;
+
+    padding:35px 45px;
+
+    border-radius:28px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.offer-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+/* ========================= */
+
+.orange{
+
+background:linear-gradient(135deg,#ff9a3d,#ff6a00);
+
+}
+
+.red{
+
+background:linear-gradient(135deg,#ff5b6a,#ff8f5a);
+
+}
+
+.green{
+
+background:linear-gradient(135deg,#2ecc71,#16a085);
+
+}
+
+/* =====================================
+   IMAGE
+===================================== */
+
+.offer-image{
+
+flex:0 0 260px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.offer-image img{
+
+width:250px;
+
+transition:.5s;
+
+animation:floatImage 4s ease-in-out infinite;
+
+}
+
+.offer-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.offer-content{
+
+flex:1;
+
+color:#fff;
+
+}
+
+.offer-tag{
+
+display:inline-block;
+
+background:rgba(255,255,255,.18);
+
+backdrop-filter:blur(12px);
+
+padding:9px 18px;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.offer-content h2{
+
+font-size:42px;
+
+font-weight:800;
+
+margin-bottom:10px;
+
+}
+
+.offer-content p{
+
+font-size:18px;
+
+line-height:1.6;
+
+margin-bottom:15px;
+
+}
+
+.offer-content h3{
+
+font-size:22px;
+
+font-weight:700;
+
+margin-bottom:25px;
+
+}
+
+.offer-content button{
+
+background:white;
+
+color:#FC8019;
+
+border:none;
+
+padding:15px 34px;
+
+border-radius:40px;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.offer-content button:hover{
+
+background:#222;
+
+color:white;
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+/* =====================================
+   FLOAT
+===================================== */
+
+@keyframes floatImage{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* =====================================
+   RESTAURANT OFFERS
+===================================== */
+
+.restaurant-offers{
+    margin-top:70px;
+}
+
+.restaurant-offers h2{
+    text-align:center;
+    font-size:38px;
+    font-weight:800;
+    color:#222;
+    margin-bottom:35px;
+}
+
+.restaurant-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.restaurant-item{
+    background:#fff;
+    border-radius:20px;
+    padding:20px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s ease;
+    cursor:pointer;
+}
+
+.restaurant-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.restaurant-info{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.restaurant-info img{
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:15px;
+    padding:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.restaurant-info h4{
+    margin:0;
+    font-size:20px;
+    color:#222;
+}
+
+.restaurant-info p{
+    margin-top:5px;
+    color:#888;
+    font-size:14px;
+}
+
+.offer-badge{
+    background:linear-gradient(135deg,#FC8019,#ff5b00);
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}
+
+/* =====================================
+   DOWNLOAD BANNER
+===================================== */
+
+.download-banner{
+    margin-top:80px;
+    background:linear-gradient(135deg,#ff7a18,#ff4d00);
+    border-radius:30px;
+    padding:45px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    box-shadow:0 20px 45px rgba(255,122,24,.30);
+}
+
+.download-banner h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.download-banner p{
+    font-size:17px;
+    opacity:.95;
+    max-width:550px;
+}
+
+/* =====================================
+   STORE BUTTONS
+===================================== */
+
+.download-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.playstore-btn,
+.appstore-btn{
+
+    border:none;
+    padding:16px 30px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+
+}
+
+.playstore-btn{
+
+    background:#fff;
+    color:#222;
+
+}
+
+.appstore-btn{
+
+    background:#222;
+    color:#fff;
+
+}
+
+.playstore-btn:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.appstore-btn:hover{
+
+    transform:translateY(-5px);
+    background:#000;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:991px){
+
+.offer-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.offer-image{
+
+flex:none;
+
+}
+
+.offer-image img{
+
+width:200px;
+
+}
+
+.download-banner{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.restaurant-list{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.offers-page{
+
+padding:90px 20px 40px;
+
+}
+
+.offers-header h1{
+
+font-size:36px;
+
+}
+
+.offers-header p{
+
+font-size:16px;
+
+}
+
+.offer-content h2{
+
+font-size:30px;
+
+}
+
+.offer-content h3{
+
+font-size:18px;
+
+}
+
+.offer-content p{
+
+font-size:15px;
+
+}
+
+.offer-card{
+
+padding:25px;
+
+}
+
+.restaurant-offers h2{
+
+font-size:30px;
+
+}
+
+.download-banner{
+
+padding:30px 25px;
+
+}
+
+.download-banner h2{
+
+font-size:28px;
+
+}
+
+.download-banner p{
+
+font-size:15px;
+
+}
+
+.playstore-btn,
+.appstore-btn{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.restaurant-item{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:15px;
+
+}
+
+.restaurant-info{
+
+flex-direction:column;
+
+}
+
+.offer-badge{
+
+margin-top:10px;
+
+}
+
+}
+
+/* =====================================
+   PREMIUM ANIMATIONS
+===================================== */
+
+.offer-card,
+.restaurant-item,
+.download-banner{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

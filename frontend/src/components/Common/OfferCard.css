@@ -1,0 +1,91 @@
+.offer-card{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:30px;
+
+padding:30px;
+
+border-radius:25px;
+
+margin-bottom:30px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.offer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.offer-image img{
+
+width:180px;
+
+transition:.4s;
+
+}
+
+.offer-card:hover img{
+
+transform:scale(1.08) rotate(-3deg);
+
+}
+
+.offer-details{
+
+flex:1;
+
+color:white;
+
+}
+
+.offer-chip{
+
+background:rgba(255,255,255,.25);
+
+padding:8px 18px;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:700;
+
+display:inline-block;
+
+margin-bottom:15px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.offer-details h2{
+
+font-size:38px;
+
+margin-bottom:10px;
+
+}
+
+.offer-details p{
+
+font-size:18px;
+
+margin-bottom:15px;
+
+}
+
+.offer-details h3{
+
+font-size:22px;
+
+}

@@ -1,0 +1,38 @@
+import React from "react";
+import "./RestaurantOfferCard.css";
+
+const RestaurantOfferCard = ({
+    logo,
+    name,
+    cuisine,
+    offer
+}) => {
+
+    return (
+
+        <div className="restaurant-card">
+
+            <img
+                src={logo}
+                alt=""
+            />
+
+            <div>
+
+                <h3>{name}</h3>
+
+                <p>{cuisine}</p>
+
+            </div>
+
+            <span>
+                {offer}
+            </span>
+
+        </div>
+
+    );
+
+};
+
+export default RestaurantOfferCard;

@@ -1,0 +1,55 @@
+import React from "react";
+import "./OfferCard.css";
+import OfferButton from "./OfferButton";
+
+const OfferCard = ({
+    image,
+    title,
+    subtitle,
+    code,
+    color
+}) => {
+
+    return (
+
+        <div
+            className="offer-card"
+            style={{
+                background:color
+            }}
+        >
+
+            <div className="offer-image">
+
+                <img
+                    src={image}
+                    alt=""
+                />
+
+            </div>
+
+            <div className="offer-details">
+
+                <span className="offer-chip">
+                    LIMITED OFFER
+                </span>
+
+                <h2>{title}</h2>
+
+                <p>{subtitle}</p>
+
+                <h3>
+                    Code : {code}
+                </h3>
+
+            </div>
+
+            <OfferButton text="Claim Offer" />
+
+        </div>
+
+    );
+
+};
+
+export default OfferCard;

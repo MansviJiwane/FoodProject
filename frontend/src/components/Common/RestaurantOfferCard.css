@@ -1,0 +1,69 @@
+.restaurant-card{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:22px;
+
+background:white;
+
+border-radius:18px;
+
+margin-bottom:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.restaurant-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.restaurant-card img{
+
+width:65px;
+
+height:65px;
+
+object-fit:contain;
+
+}
+
+.restaurant-card h3{
+
+margin:0;
+
+font-size:20px;
+
+}
+
+.restaurant-card p{
+
+margin:5px 0 0;
+
+color:#777;
+
+}
+
+.restaurant-card span{
+
+background:#FC8019;
+
+color:white;
+
+padding:8px 16px;
+
+border-radius:25px;
+
+font-size:14px;
+
+font-weight:700;
+
+}
